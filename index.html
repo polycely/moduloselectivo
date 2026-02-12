@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Infografía sobre el Módulo Selectivo de Profundización I (MSP I) de Medicina de la Universidad del Rosario. Requisitos, beneficios y rutas de movilidad nacional e internacional.">
+    <meta name="description" content="Infografía sobre el Módulo Selectivo de Profundización I (MSP I) de la Universidad del Rosario. Requisitos y rutas de movilidad.">
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
 
     <title>Infografía Módulo Selectivo de Profundización I (MSP I)</title>
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -34,290 +33,142 @@
         .animate-pulse-subtle {
             animation: pulse-subtle 3s infinite;
         }
+
+        h1, h2, h3, h4, h5, h6, p, span, a, li, code {
+            font-family: 'Inter', sans-serif;
+        }
     </style>
 </head>
 <body class="p-4 md:p-8 lg:p-12">
 
     <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-200">
-        <header class="ur-blue text-white p-6 md:p-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none"></div>
-
-            <div class="flex items-center gap-5 mb-4 md:mb-0 relative z-10">
-                <div class="p-1 bg-white/10 rounded-xl backdrop-blur-sm">
-                   <img id="logo-ur" 
-                        src="logo UR GLOBAL-05.png" 
-                        alt="Logo Universidad del Rosario" 
-                        class="h-16 md:h-20 object-contain"
-                        onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Logo_Universidad_del_Rosario.svg/512px-Logo_Universidad_del_Rosario.svg.png'">
+        <header class="ur-blue text-white p-6 md:p-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+            <div class="flex items-center gap-5 mb-4 md:mb-0">
+                <div>
+                    <img id="logo-ur" 
+                         src="logo UR GLOBAL-05.png" 
+                         alt="Logo Universidad del Rosario" 
+                         class="h-16 md:h-20 object-contain brightness-0 invert"
+                         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Logo_Universidad_del_Rosario.svg/512px-Logo_Universidad_del_Rosario.svg.png'; this.classList.remove('brightness-0', 'invert'); this.style.filter='brightness(0) invert(1)';">
                 </div>
                 <div>
-                    <h1 class="text-xl md:text-3xl font-black leading-none tracking-tight uppercase">Módulo Selectivo</h1>
-                    <h2 class="text-lg md:text-2xl font-light opacity-90 tracking-wide">de Profundización I (MSP I)</h2>
+                    <h1 class="text-xl md:text-3xl font-extrabold leading-tight tracking-tight uppercase">MÓDULO SELECTIVO</h1>
+                    <h2 class="text-lg md:text-2xl font-light opacity-90 uppercase">DE PROFUNDIZACIÓN I (MSP I)</h2>
                 </div>
             </div>
-            <div class="flex items-center gap-4 opacity-80 relative z-10">
-                <i data-lucide="book-open-check" class="w-8 h-8 md:w-12 md:h-12"></i>
+            <div class="flex items-center gap-4 opacity-70">
+                <i data-lucide="book-open" class="w-8 h-8 md:w-10 md:h-10 text-white"></i>
+                <i data-lucide="graduation-cap" class="w-8 h-8 md:w-10 md:h-10 text-white"></i>
             </div>
         </header>
 
         <main class="p-4 md:p-8 space-y-12">
             
-            <section class="bg-gradient-to-r from-blue-50 to-white border-l-8 ur-border-blue p-6 rounded-r-2xl shadow-sm">
+            <section class="bg-blue-50 border-l-4 border-red-500 p-6 rounded-r-2xl shadow-sm">
                 <div class="flex items-start gap-4">
-                    <div class="ur-blue p-3 rounded-xl text-white shrink-0 shadow-lg">
-                        <i data-lucide="info" class="w-6 h-6"></i>
+                    <div class="bg-red-500 p-2 rounded-full text-white shrink-0 mt-1 shadow-sm">
+                        <i data-lucide="info" class="w-5 h-5"></i>
                     </div>
                     <div>
-                        <h3 class="font-black ur-text-blue text-lg mb-2 uppercase tracking-tight">¿Qué es el MSP I?</h3>
-                        <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
-                            Espacio académico que cursan los estudiantes de Medicina de la Universidad del Rosario en el <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-bold">semestre XI</span>, mediante el cual pueden realizar movilidades nacionales o internacionales en áreas clínicas, básicas o de salud pública.
+                        <h3 class="font-bold ur-text-blue text-lg mb-1 uppercase tracking-tight">¿Qué es el MSP I?</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed font-medium">
+                            Movilidad académica saliente internacional que permite a estudiantes del programa de <strong>Medicina de la Universidad del Rosario</strong>, que cursan el <strong>semestre IX</strong>, participar en escenarios de Especialidades Clínicas, Investigación y Medicina Familiar, previo aval de la Coordinación de programa, quienes evalúan la pertinencia formativa de cada solicitud.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section class="flex justify-center">
-                <div class="bg-slate-800 text-white px-8 py-4 rounded-full flex items-center gap-4 shadow-xl transform hover:scale-105 transition-transform">
-                    <i data-lucide="clock" class="w-6 h-6 text-yellow-400"></i>
-                    <div>
-                        <span class="block text-[10px] text-slate-400 uppercase font-bold tracking-widest">Duración del módulo</span>
-                        <span class="text-xl font-black tracking-wider">8 Semanas</span>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-100 pb-2">
+                <div class="md:col-span-2 space-y-5">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="check-square" class="ur-text-blue w-6 h-6"></i>
+                        <h3 class="font-bold ur-text-blue text-lg uppercase tracking-widest">Requisitos Generales</h3>
                     </div>
-                </div>
-            </section>
-
-            <section class="space-y-6">
-                <div class="flex items-center gap-3 border-b-2 border-gray-100 pb-2">
-                    <div class="bg-gray-100 p-2 rounded-lg">
-                        <i data-lucide="list-checks" class="ur-text-blue w-5 h-5"></i>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-gray-700">
+                        <div class="flex items-center gap-3 bg-blue-50/40 p-3 rounded-xl border border-blue-100 shadow-sm">
+                            <div class="bg-blue-600 p-2 rounded-lg text-white">
+                                <i data-lucide="file-badge" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-xs font-bold leading-tight  tracking-tight">Contar con el aval de la Coordinación de Internado.</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-blue-50/40 p-3 rounded-xl border border-blue-100 shadow-sm">
+                            <div class="bg-blue-600 p-2 rounded-lg text-white">
+                                <i data-lucide="award" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-xs font-bold leading-tight  tracking-tight">Haber aprobado el semestre XI del programa.</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-blue-50/40 p-3 rounded-xl border border-blue-100 shadow-sm">
+                            <div class="bg-blue-600 p-2 rounded-lg text-white">
+                                <i data-lucide="user-check" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-xs font-bold leading-tight  tracking-tight">Ser estudiante activo en la Universidad del Rosario.</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-blue-50/40 p-3 rounded-xl border border-blue-100 shadow-sm">
+                            <div class="bg-blue-600 p-2 rounded-lg text-white">
+                                <i data-lucide="languages" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-xs font-bold leading-tight  tracking-tight">Demostrar conocimiento del idioma. (Si aplica)</span>
+                        </div>
                     </div>
-                    <h3 class="font-black ur-text-blue text-lg uppercase tracking-widest">Requisitos Generales</h3>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm transition-all hover:shadow-md hover:border-blue-200 group">
-                        <div class="bg-blue-50 text-blue-600 p-3 rounded-lg group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i data-lucide="file-signature" class="w-5 h-5"></i>
-                        </div>
-                        <span class="text-sm font-bold text-gray-700 leading-tight">Aval de la Coordinación de Internado.</span>
-                    </div>
-                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm transition-all hover:shadow-md hover:border-blue-200 group">
-                        <div class="bg-blue-50 text-blue-600 p-3 rounded-lg group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
-                        </div>
-                        <span class="text-sm font-bold text-gray-700 leading-tight">Haber aprobado el semestre X.</span>
-                    </div>
-                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm transition-all hover:shadow-md hover:border-blue-200 group">
-                        <div class="bg-blue-50 text-blue-600 p-3 rounded-lg group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i data-lucide="user-check" class="w-5 h-5"></i>
-                        </div>
-                        <span class="text-sm font-bold text-gray-700 leading-tight">Ser estudiante activo UR.</span>
-                    </div>
-                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm transition-all hover:shadow-md hover:border-blue-200 group">
-                        <div class="bg-blue-50 text-blue-600 p-3 rounded-lg group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i data-lucide="languages" class="w-5 h-5"></i>
-                        </div>
-                        <span class="text-sm font-bold text-gray-700 leading-tight">Idioma (según destino).</span>
-                    </div>
-                </div>
-
-                <div class="sticky-note p-5 rounded-xl flex items-start gap-4 text-sm shadow-sm">
-                    <i data-lucide="alert-circle" class="w-5 h-5 text-yellow-700 mt-0.5 shrink-0"></i>
-                    <div class="space-y-1">
-                        <p class="font-bold text-yellow-900 uppercase text-xs tracking-wider">Recomendación Importante</p>
-                        <p class="text-yellow-800 leading-relaxed">
-                            Se sugiere iniciar la búsqueda con <strong>al menos un semestre de anticipación</strong>. Consulta siempre con la Coordinación las alternativas disponibles.
-                        </p>
-                    </div>
+                <div class="sticky-note p-6 rounded-2xl shadow-sm flex flex-col justify-start border border-yellow-200">
+                    <p class="font-bold text-yellow-800 flex items-center gap-2 mb-3 uppercase text-[11px] tracking-wider">
+                        <i data-lucide="alert-triangle" class="w-4 h-4"></i> Nota:
+                    </p>
+                    <p class="text-sm leading-relaxed text-yellow-900 font-bold italic">
+                        Consulta las fechas de corte de las rotaciones con la coordinación del programa.
+                    </p>
                 </div>
             </section>
 
-            <section class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col items-center text-center space-y-4">
-                <h3 class="font-bold text-slate-400 text-xs uppercase tracking-[0.2em] flex items-center gap-2">
-                    <i data-lucide="mails" class="w-4 h-4"></i> ¿Dudas? Escríbenos
+            <section class="bg-white p-6 rounded-2xl text-center border-2 border-gray-100 shadow-sm">
+                <h3 class="font-bold ur-text-blue text-xs uppercase mb-4 tracking-[0.2em] flex items-center justify-center gap-2">
+                    <i data-lucide="mails" class="w-4 h-4 text-red-500"></i> Contacto de la Coordinación de Programa
                 </h3>
-                <div class="flex flex-wrap justify-center gap-4 md:gap-8">
-                    <a href="mailto:internadomedicina@urosario.edu.co" class="group flex items-center gap-2 bg-white px-5 py-2.5 rounded-full border border-slate-200 shadow-sm hover:border-blue-300 transition-all">
-                        <div class="bg-blue-100 p-1.5 rounded-full text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i data-lucide="mail" class="w-3 h-3"></i>
-                        </div>
-                        <span class="text-xs font-bold text-slate-700 group-hover:text-blue-700">internadomedicina@urosario.edu.co</span>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12 text-sm">
+                    <a href="mailto:angelica.avendano@urosario.edu.co" class="font-bold text-blue-600 hover:text-blue-800 flex items-center gap-2 transition-colors">
+                        <i data-lucide="mail" class="w-4 h-4"></i> angelica.avendano@urosario.edu.co
                     </a>
                 </div>
             </section>
 
-            <section class="relative bg-gradient-to-br from-green-500 to-emerald-700 rounded-3xl p-8 text-white overflow-hidden shadow-2xl shadow-green-200/50">
-                <div class="absolute top-0 right-0 p-8 opacity-10">
-                    <i data-lucide="message-circle" class="w-40 h-40"></i>
+            <section class="bg-gradient-to-br from-emerald-50 via-white to-green-50 border border-green-200 p-6 md:p-8 rounded-3xl shadow-xl shadow-green-100/50 relative overflow-hidden animate-pulse-subtle">
+                <div class="absolute -right-8 -top-8 text-green-100 opacity-50 pointer-events-none">
+                    <i data-lucide="message-circle" class="w-32 h-32"></i>
                 </div>
                 
-                <div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
-                    <div class="flex-1 space-y-3 text-center md:text-left">
-                        <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">
-                            <i data-lucide="users" class="w-3 h-3"></i>
-                            <span class="text-[10px] font-bold uppercase tracking-wider">Comunidad Estudiantil</span>
+                <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 relative z-10">
+                    <div class="shrink-0">
+                        <div class="bg-green-500 p-5 rounded-2xl text-white shadow-lg shadow-green-200">
+                            <i data-lucide="users-round" class="w-10 h-10 md:w-10 md:h-10"></i>
                         </div>
-                        <h3 class="font-black text-2xl uppercase leading-tight">Red de apoyo a la movilidad saliente</h3>
-                        <p class="text-green-50 text-sm font-medium leading-relaxed max-w-lg">
-                            Únete al grupo oficial para compartir oportunidades, trámites y recomendaciones con otros rosaristas.
+                    </div>
+                    <div class="flex-1 text-center md:text-left space-y-3">
+                        <h3 class="font-extrabold text-green-800 text-xl md:text-2xl uppercase leading-tight">Red de apoyo a la movilidad saliente - Medicina</h3>
+                        <p class="text-green-900/70 text-sm md:text-base leading-relaxed font-medium">
+                        En este grupo son bienvenidos los rosaristas que previamente realizaron rotaciones y observaciones clínicas y quienes están interesados en realizarlas para compartir información sobre oportunidades, trámites, experiencias y recomendaciones.
                         </p>
                     </div>
-                    <div class="shrink-0">
+                    <div class="shrink-0 w-full md:w-auto">
                         <a href="https://chat.whatsapp.com/EYsMGfcyxlmKHdPcP54LDl" target="_blank" rel="noopener noreferrer"
-                           class="flex items-center gap-3 bg-white text-green-700 hover:bg-green-50 font-black py-4 px-8 rounded-2xl shadow-lg transition-transform hover:scale-105 active:scale-95 text-xs tracking-widest uppercase">
-                            <i data-lucide="log-in" class="w-4 h-4"></i>
-                            Unirme ahora
+                           class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1fb355] text-white font-extrabold py-4 px-6 md:px-10 rounded-2xl shadow-lg transition-all transform hover:scale-105 active:scale-95 text-xs md:text-sm tracking-widest uppercase text-center">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            UNIRME AL GRUPO
                         </a>
                     </div>
                 </div>
             </section>
 
-            <section class="bg-yellow-50 border border-yellow-200 rounded-3xl p-8 md:p-10 text-center space-y-6">
-                <div class="inline-block bg-yellow-100 p-4 rounded-full mb-2">
-                    <i data-lucide="piggy-bank" class="w-8 h-8 text-yellow-600"></i>
-                </div>
-                <h3 class="font-black text-yellow-900 text-xl uppercase tracking-widest">Beneficio Económico</h3>
-                
-                <div class="py-4">
-                    <span class="text-6xl font-black text-yellow-500 drop-shadow-sm tracking-tighter">80%</span>
-                    <p class="text-yellow-800 font-bold text-lg mt-2">de descuento</p>
-                    <p class="text-yellow-700 text-sm max-w-xs mx-auto mt-1">sobre el valor de los créditos cursados en el exterior.</p>
-                </div>
-
-                <div class="bg-white/60 p-4 rounded-xl border border-yellow-100 text-xs text-yellow-800 font-medium max-w-lg mx-auto leading-relaxed">
-                    <i data-lucide="info" class="w-3 h-3 inline-block mr-1 mb-0.5"></i>
-                    Este beneficio opera como devolución al finalizar la movilidad y debe tramitarse ante la Secretaría Académica de la EMCS.
-                </div>
-            </section>
-
-            <section class="pt-6 space-y-8">
-                <div class="text-center">
-                    <h3 class="font-black ur-text-blue text-2xl uppercase tracking-tighter flex items-center justify-center gap-3">
-                        <i data-lucide="map" class="w-8 h-8"></i> Rutas de Búsqueda
-                    </h3>
-                    <p class="text-slate-500 text-sm mt-2">Selecciona tu destino para ver el proceso</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    
-                    <div class="bg-white border border-gray-200 rounded-3xl overflow-hidden flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-gray-50 p-4 border-b border-gray-200 flex items-center justify-between">
-                            <h4 class="font-black text-gray-800 uppercase flex items-center gap-2">
-                                <span class="text-2xl">🇨🇴</span> Nacional
-                            </h4>
-                            <span class="text-[10px] font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded">Colombia</span>
-                        </div>
-                        <div class="p-6 flex-1 space-y-6">
-                            <div class="bg-blue-50 p-4 rounded-xl text-xs text-blue-900 leading-relaxed border border-blue-100">
-                                <strong class="block mb-1 text-blue-700 uppercase">Requisito Legal:</strong>
-                                Se exige <strong>convenio docencia-servicio</strong> vigente.
-                            </div>
-                            
-                            <div class="space-y-4">
-                                <div class="relative pl-6 border-l-2 border-gray-200">
-                                    <div class="absolute -left-[5px] top-0 w-2.5 h-2.5 bg-gray-300 rounded-full"></div>
-                                    <h5 class="font-bold text-sm text-gray-800 uppercase mb-1">1. Validar Convenio</h5>
-                                    <p class="text-xs text-gray-600 leading-snug">Consulta a Coordinación si existe convenio con el sitio.</p>
-                                </div>
-                                <div class="relative pl-6 border-l-2 border-gray-200">
-                                    <div class="absolute -left-[5px] top-0 w-2.5 h-2.5 bg-gray-300 rounded-full"></div>
-                                    <h5 class="font-bold text-sm text-gray-800 uppercase mb-1">2. Gestión</h5>
-                                    <ul class="space-y-2 mt-2">
-                                        <li class="flex items-start gap-2 text-xs text-gray-600">
-                                            <i data-lucide="check-circle-2" class="w-3 h-3 text-green-500 mt-0.5"></i>
-                                            <span><strong>Con convenio:</strong> Trámite directo con EMCS.</span>
-                                        </li>
-                                        <li class="flex items-start gap-2 text-xs text-gray-600">
-                                            <i data-lucide="x-circle" class="w-3 h-3 text-red-500 mt-0.5"></i>
-                                            <span><strong>Sin convenio:</strong> Solicitar a Cancillería consultar cupos (máx 2 instituciones).</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+            <section class="bg-slate-50 border-l-4 ur-border-blue p-6 md:p-8 rounded-r-3xl shadow-sm">
+                <div class="flex items-start gap-4">
+                    <div class="bg-blue-600 p-2 rounded-full text-white shrink-0 mt-1 shadow-lg">
+                        <i data-lucide="alert-circle" class="w-6 h-6"></i>
                     </div>
-
-                    <div class="bg-white border border-blue-200 rounded-3xl overflow-hidden flex flex-col h-full shadow-md">
-                        <div class="bg-blue-50 p-4 border-b border-blue-200 flex items-center justify-between">
-                            <h4 class="font-black ur-text-blue uppercase flex items-center gap-2">
-                                <span class="text-2xl">🌎</span> Internacional
-                            </h4>
-                            <span class="text-[10px] font-bold bg-blue-200 text-blue-800 px-2 py-1 rounded">Exterior</span>
-                        </div>
-                        <div class="p-6 flex-1 space-y-6">
-                            
-                            <div class="space-y-2">
-                                <div class="flex items-center gap-2">
-                                    <span class="bg-blue-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Opción A</span>
-                                    <h5 class="font-bold text-sm text-gray-800 uppercase">Convenios Vigentes</h5>
-                                </div>
-                                <p class="text-xs text-gray-600 leading-snug pl-2">
-                                    Consulta universidades aliadas <a href="https://unirosario.adv-pub.moveonca.com/home-page-1576/" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-bold underline">aquí</a>. Solicita a Cancillería la consulta de cupos (máx 2).
-                                </p>
-                            </div>
-
-                            <hr class="border-gray-100">
-
-                            <div class="space-y-2">
-                                <div class="flex items-center gap-2">
-                                    <span class="bg-purple-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Opción B</span>
-                                    <h5 class="font-bold text-sm text-gray-800 uppercase">Búsqueda Autónoma</h5>
-                                </div>
-                                <p class="text-xs text-gray-600 leading-snug pl-2">
-                                    Contacta directamente el escenario clínico. Una vez aceptado, solicita apoyo a Cancillería para la nominación oficial.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="bg-slate-800 text-slate-300 rounded-3xl p-8 md:p-10 space-y-8">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="bg-slate-700 p-3 rounded-xl">
-                        <i data-lucide="clipboard-list" class="w-6 h-6 text-white"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-black text-white text-lg uppercase tracking-widest">Antes de solicitar a Cancillería</h3>
-                        <p class="text-xs text-slate-400">Asegúrate de tener esta información lista:</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <div class="bg-slate-700/50 p-5 rounded-2xl border border-slate-600 hover:bg-slate-700 transition-colors group text-center">
-                        <div class="bg-blue-600 text-white p-3 rounded-full inline-block mb-3 shadow-lg group-hover:scale-110 transition-transform">
-                            <i data-lucide="building" class="w-5 h-5"></i>
-                        </div>
-                        <p class="text-sm font-bold text-white">Institución</p>
-                    </div>
-                    <div class="bg-slate-700/50 p-5 rounded-2xl border border-slate-600 hover:bg-slate-700 transition-colors group text-center">
-                        <div class="bg-blue-600 text-white p-3 rounded-full inline-block mb-3 shadow-lg group-hover:scale-110 transition-transform">
-                            <i data-lucide="stethoscope" class="w-5 h-5"></i>
-                        </div>
-                        <p class="text-sm font-bold text-white">Servicio Clínico</p>
-                    </div>
-                    <div class="bg-slate-700/50 p-5 rounded-2xl border border-slate-600 hover:bg-slate-700 transition-colors group text-center">
-                        <div class="bg-blue-600 text-white p-3 rounded-full inline-block mb-3 shadow-lg group-hover:scale-110 transition-transform">
-                            <i data-lucide="calendar-check" class="w-5 h-5"></i>
-                        </div>
-                        <p class="text-sm font-black text-slate-100 uppercase tracking-tight">Fechas de movilidad</p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="pt-8 text-center px-4 pb-12">
-                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=V1dSrrqJME2i90l5bvjGBBil7Jhr96NDjxNK3a3xq1xUQ0NSTTJSOEk1OVlZUktRRDI4MUI0OUlQVi4u" 
-                   target="_blank" rel="noopener noreferrer"
-                   class="inline-block w-full max-w-md ur-blue text-white font-black py-5 rounded-3xl shadow-2xl hover:brightness-110 transition-all transform hover:-translate-y-1 active:scale-95 text-xs md:text-sm tracking-[0.2em] uppercase text-center animate-pulse-subtle">
-                    Realiza tu solicitud a Cancillería
-                </a>
-                <p class="text-[9px] text-slate-400 mt-4 uppercase font-black tracking-widest">Nota: Cada institución define sus propios requisitos.</p>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
-</html>
+                    <div class="space-y-4 flex-1">
+                        <h3 class="font-black ur-text-blue text-lg uppercase tracking-widest">Importante:</h3>
+                        <ul class="space-y-4">
+                            <li class="text-sm text-gray-700 flex items-start gap-3 leading-relaxed font-medium">
+                                <i data-lucide="globe" class="w-5 h-5 text-blue-600 shrink-0"></i>
+                                Solo se puede realizar movilidad<strong>internacional.</strong>
