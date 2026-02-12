@@ -3,10 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Infografía sobre el Módulo Selectivo de Profundización I (MSP I) de la Universidad del Rosario. Requisitos y rutas de movilidad.">
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
-
     <title>Infografía Módulo Selectivo de Profundización I (MSP I)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -42,14 +38,15 @@
 <body class="p-4 md:p-8 lg:p-12">
 
     <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-200">
+        <!-- Header -->
         <header class="ur-blue text-white p-6 md:p-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
             <div class="flex items-center gap-5 mb-4 md:mb-0">
+                <!-- Se eliminó el recuadro de fondo (bg-white/10, backdrop-blur, etc.) -->
                 <div>
                     <img id="logo-ur" 
                          src="logo UR GLOBAL-05.png" 
                          alt="Logo Universidad del Rosario" 
-                         class="h-16 md:h-20 object-contain brightness-0 invert"
-                         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Logo_Universidad_del_Rosario.svg/512px-Logo_Universidad_del_Rosario.svg.png'; this.classList.remove('brightness-0', 'invert'); this.style.filter='brightness(0) invert(1)';">
+                         class="h-16 md:h-20 object-contain brightness-0 invert">
                 </div>
                 <div>
                     <h1 class="text-xl md:text-3xl font-extrabold leading-tight tracking-tight uppercase">MÓDULO SELECTIVO</h1>
@@ -64,6 +61,7 @@
 
         <main class="p-4 md:p-8 space-y-12">
             
+            <!-- 1. ¿Qué es el MSP I? -->
             <section class="bg-blue-50 border-l-4 border-red-500 p-6 rounded-r-2xl shadow-sm">
                 <div class="flex items-start gap-4">
                     <div class="bg-red-500 p-2 rounded-full text-white shrink-0 mt-1 shadow-sm">
@@ -78,6 +76,7 @@
                 </div>
             </section>
 
+            <!-- 2. Requisitos Generales -->
             <section class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-100 pb-2">
                 <div class="md:col-span-2 space-y-5">
                     <div class="flex items-center gap-2 mb-2">
@@ -113,6 +112,7 @@
                     </div>
                 </div>
                 
+                <!-- Sección de Nota Lateral -->
                 <div class="sticky-note p-6 rounded-2xl shadow-sm flex flex-col justify-start border border-yellow-200">
                     <p class="font-bold text-yellow-800 flex items-center gap-2 mb-3 uppercase text-[11px] tracking-wider">
                         <i data-lucide="alert-triangle" class="w-4 h-4"></i> Nota:
@@ -123,6 +123,7 @@
                 </div>
             </section>
 
+            <!-- 3. Contacto -->
             <section class="bg-white p-6 rounded-2xl text-center border-2 border-gray-100 shadow-sm">
                 <h3 class="font-bold ur-text-blue text-xs uppercase mb-4 tracking-[0.2em] flex items-center justify-center gap-2">
                     <i data-lucide="mails" class="w-4 h-4 text-red-500"></i> Contacto de la Coordinación de Programa
@@ -134,7 +135,9 @@
                 </div>
             </section>
 
+            <!-- 4. Red de Apoyo -->
             <section class="bg-gradient-to-br from-emerald-50 via-white to-green-50 border border-green-200 p-6 md:p-8 rounded-3xl shadow-xl shadow-green-100/50 relative overflow-hidden animate-pulse-subtle">
+                <!-- Icono de fondo -->
                 <div class="absolute -right-8 -top-8 text-green-100 opacity-50 pointer-events-none">
                     <i data-lucide="message-circle" class="w-32 h-32"></i>
                 </div>
@@ -152,7 +155,7 @@
                         </p>
                     </div>
                     <div class="shrink-0 w-full md:w-auto">
-                        <a href="https://chat.whatsapp.com/EYsMGfcyxlmKHdPcP54LDl" target="_blank" rel="noopener noreferrer"
+                        <a href="https://chat.whatsapp.com/EYsMGfcyxlmKHdPcP54LDl" target="_blank" 
                            class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1fb355] text-white font-extrabold py-4 px-6 md:px-10 rounded-2xl shadow-lg transition-all transform hover:scale-105 active:scale-95 text-xs md:text-sm tracking-widest uppercase text-center">
                             <i data-lucide="message-circle" class="w-5 h-5"></i>
                             UNIRME AL GRUPO
@@ -161,6 +164,7 @@
                 </div>
             </section>
 
+            <!-- 5. Importante -->
             <section class="bg-slate-50 border-l-4 ur-border-blue p-6 md:p-8 rounded-r-3xl shadow-sm">
                 <div class="flex items-start gap-4">
                     <div class="bg-blue-600 p-2 rounded-full text-white shrink-0 mt-1 shadow-lg">
@@ -172,3 +176,267 @@
                             <li class="text-sm text-gray-700 flex items-start gap-3 leading-relaxed font-medium">
                                 <i data-lucide="globe" class="w-5 h-5 text-blue-600 shrink-0"></i>
                                 Solo se puede realizar movilidad<strong>internacional.</strong>
+                            </li>
+                            <li class="text-sm text-gray-700 flex items-start gap-3 leading-relaxed font-medium">
+                                <i data-lucide="graduation-cap" class="w-5 h-5 text-blue-600 shrink-0"></i>
+                                Verifica que la institución de destino otorgue nota numérica.
+                            </li>
+                            <li class="text-sm text-gray-700 flex items-start gap-3 leading-relaxed font-medium">
+                                <i data-lucide="clock" class="w-5 h-5 text-blue-600 shrink-0"></i>
+                                Asegúrate de que la observación clínica tenga una duración de 4 o de 8 semanas.
+                            </li>
+                            <li class="text-sm text-gray-700 flex items-start gap-3 leading-relaxed font-medium">
+                                <i data-lucide="calendar-check" class="w-5 h-5 text-blue-600 shrink-0"></i>
+                                <div>
+                                    <p class="font-bold">Rectifica que la observación clínica sea dentro de las fechas de tu periodo académico:</p>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-4">
+                                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                                            <p class="text-xs font-black ur-text-blue uppercase mb-1 tracking-wider">Especialidades clínicas:</p>
+                                            <p class="text-xs text-gray-600 italic font-medium">Coincide con cortes de las rotaciones.</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                                            <p class="text-xs font-black ur-text-blue uppercase mb-1 tracking-wider">Atención primaria:</p>
+                                            <p class="text-xs text-gray-600 italic font-medium">Coincide con cortes de las rotaciones.</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                                            <p class="text-xs font-black ur-text-blue uppercase mb-1 tracking-wider">Investigación:</p>
+                                            <p class="text-xs text-gray-600 italic font-medium">Elige la fecha que desees.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Beneficios Económicos -->
+            <section class="bg-gradient-to-br from-yellow-50 via-white to-yellow-100 border border-yellow-200 p-6 md:p-8 rounded-3xl shadow-sm text-center">
+                <div class="flex flex-col items-center max-w-3xl mx-auto space-y-6">
+                    <div class="space-y-3">
+                        <div class="bg-yellow-400 p-4 rounded-full text-white shadow-xl inline-block mb-2">
+                            <i data-lucide="sparkles" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-black text-yellow-900 text-xl uppercase tracking-widest">Beneficios Económicos</h3>
+                        <p class="text-gray-800 text-lg leading-tight font-medium">
+                            Los estudiantes que realicen movilidad internacional saliente recibirán un descuento del:
+                        </p>
+                        <span class="text-4xl md:text-5xl font-black text-yellow-600 block my-4 drop-shadow-sm">80%</span>
+                        <p class="text-gray-700 text-sm md:text-base leading-tight font-medium">
+                            del valor de los créditos cursados en el exterior.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mt-4">
+                        <div class="bg-white/70 border border-yellow-200 p-5 rounded-2xl flex items-start gap-4 shadow-sm text-left transition-transform hover:scale-[1.02]">
+                            <div class="bg-yellow-100 p-2.5 rounded-xl shrink-0">
+                                <i data-lucide="history" class="w-6 h-6 text-yellow-700"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-yellow-900 uppercase text-xs mb-1 tracking-wider">Mecanismo:</strong>
+                                <p class="text-xs text-gray-700 font-medium leading-snug">
+                                    Este beneficio se otorga como una <strong>devolución</strong>, una vez finalizada la movilidad.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-white/70 border border-yellow-200 p-5 rounded-2xl flex items-start gap-4 shadow-sm text-left transition-transform hover:scale-[1.02]">
+                            <div class="bg-yellow-100 p-2.5 rounded-xl shrink-0">
+                                <i data-lucide="building-2" class="w-6 h-6 text-yellow-700"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-yellow-900 uppercase text-xs mb-1 tracking-wider">Trámite:</strong>
+                                <p class="text-xs text-gray-700 font-medium leading-snug">
+                                    Se debe tramitar ante la <strong>Secretaría Académica de la EMCS</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. Cómo inicio la búsqueda de mi MSP I -->
+            <section class="space-y-6 pt-4">
+                <div class="text-center space-y-4">
+                    <h3 class="font-black ur-text-blue text-xl md:text-2xl tracking-tighter uppercase flex items-center justify-center gap-3">
+                        <i data-lucide="search-code" class="w-6 h-6 md:w-7 md:h-7 text-blue-600"></i> ¿CÓMO INICIO LA BÚSQUEDA DE MI MSP I?
+                    </h3>
+                    
+                    <p class="text-slate-500 text-xs font-bold uppercase tracking-widest">Existen dos alternativas para identificar la institución:</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                    <!-- Alternativa 1: Convenios -->
+                    <div class="bg-white p-6 md:p-8 rounded-3xl border-2 ur-border-blue shadow-md flex flex-col space-y-5 transition-all hover:shadow-lg">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-blue-600 p-3 rounded-2xl text-white shadow-lg">
+                                <i data-lucide="search" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-black ur-text-blue text-lg uppercase leading-tight">1. Revisar los convenios vigentes</h4>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed font-medium">
+                            Puedes consultar los convenios internacionales con <strong>universidades</strong> aquí:
+                        </p>
+                        <a href="https://unirosario.adv-pub.moveonca.com/home-page-1576/" target="_blank" 
+                           class="flex items-center justify-between bg-slate-50 border border-slate-200 p-4 rounded-xl text-blue-600 font-bold text-xs group hover:bg-blue-50 transition-colors uppercase">
+                            <span>CONSULTAR CONVENIOS</span>
+                            <i data-lucide="external-link" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                        <p class="text-[12px] text-slate-700 leading-relaxed font-bold border-l-2 ur-border-blue pl-4">
+                            Una vez identificada la universidad, puedes solicitar a Cancillería consultar cupos en <strong>máximo 2 instituciones por estudiante</strong> diligenciando el formulario de solicitud que se encuentra más abajo.                        </p>
+                        <div class="bg-yellow-50 border border-yellow-100 p-4 rounded-xl mt-auto">
+                            <strong class="text-yellow-800 text-[10px] uppercase block mb-1 tracking-wider">📌 Ten en cuenta:</strong>
+                            <ul class="text-yellow-700 text-[11px] leading-tight font-medium space-y-1 list-disc ml-4">
+                                <li>Las universidades priorizan a sus propios estudiantes, lo que puede limitar la disponibilidad de cupos en escenarios clínicos.</li>
+                                <li>En caso de respuesta negativa en ambas insituciones debes continuar la búsqueda de forma autónoma.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Alternativa 2: Búsqueda Autónoma -->
+                    <div class="bg-gradient-to-br from-white to-blue-50/50 p-6 md:p-8 rounded-3xl border-2 ur-border-blue shadow-md flex flex-col justify-between relative overflow-hidden group transition-all hover:shadow-lg">
+                        <div class="flex flex-col space-y-6">
+                            <div class="flex items-center gap-4 relative z-10">
+                                <div class="bg-blue-600 p-3 rounded-2xl text-white shadow-lg">
+                                    <i data-lucide="globe" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-black ur-text-blue text-lg uppercase leading-tight">2. Búsqueda autónoma</h4>
+                                    <span class="bg-blue-100 ur-text-blue text-[9px] px-2 py-0.5 rounded-full font-black tracking-widest uppercase">Opción recomendada</span>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4 relative z-10">
+                                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                                    Puedes elegir libremente la institución según tus intereses contactando directamente a los escenarios clínicos o a los profesionales ya que no se requiere un convenio previo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Bloque Siguiente Paso -->
+                        <div class="relative bg-white border border-blue-100 p-5 rounded-2xl shadow-inner mt-6 overflow-hidden">
+                            <div class="absolute top-0 right-0 p-2 opacity-5">
+                                <i data-lucide="check-circle-2" class="w-16 h-16 text-blue-600"></i>
+                            </div>
+                            
+                            <h5 class="text-[11px] font-black ur-text-blue uppercase tracking-widest flex items-center gap-2 mb-4">
+                                <i data-lucide="flag" class="w-4 h-4 text-red-500"></i> ¡Siguiente paso!
+                            </h5>
+
+                            <div class="space-y-4">
+                                <p class="text-[11px] text-slate-700 leading-tight font-semibold">
+                                    Tras recibir respuesta positiva o interés formal, solicita a Cancillería apoyo con nominaciones remitiendo:
+                                </p>
+                                
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-3 bg-blue-50/50 p-2 rounded-lg border border-blue-50">
+                                        <div class="bg-blue-600 p-1.5 rounded-md text-white"><i data-lucide="user" class="w-3 h-3"></i></div>
+                                        <span class="text-[10px] font-bold text-slate-600 uppercase">Nombre del contacto</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 bg-blue-50/50 p-2 rounded-lg border border-blue-50">
+                                        <div class="bg-blue-600 p-1.5 rounded-md text-white"><i data-lucide="at-sign" class="w-3 h-3"></i></div>
+                                        <span class="text-[10px] font-bold text-slate-600 uppercase">Correo electrónico</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 bg-blue-50/50 p-2 rounded-lg border border-blue-50">
+                                        <div class="bg-blue-600 p-1.5 rounded-md text-white"><i data-lucide="file-text" class="w-3 h-3"></i></div>
+                                        <span class="text-[10px] font-bold text-slate-600 uppercase">Detalles específicos</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. Cartas de presentación -->
+            <section class="bg-gray-50 border border-gray-200 rounded-3xl overflow-hidden shadow-sm">
+                <div class="bg-gray-200 px-6 py-3 flex items-center gap-3 border-b border-gray-300">
+                    <i data-lucide="file-text" class="w-5 h-5 ur-text-blue"></i>
+                    <h3 class="font-bold text-sm uppercase ur-text-blue tracking-widest"> Cartas de Presentación</h3>
+                </div>
+                <div class="p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 bg-white">
+                    <div class="bg-blue-50 p-4 rounded-2xl text-blue-600 shadow-inner">
+                        <i data-lucide="user-round" class="w-10 h-10"></i>
+                    </div>
+                    <div class="space-y-2 text-center md:text-left flex-1">
+                        <p class="text-sm text-slate-700 font-bold">Si requieres una carta de presentación para tus trámites iniciales, contacta a:</p>
+                        <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+                            <span class="font-black ur-text-blue uppercase tracking-wider">Jenny Salomón</span>
+                            <a href="mailto:jeny.salomon@urosario.edu.co" class="group flex items-center gap-2 ur-text-blue font-black text-sm transition-all hover:scale-105 bg-blue-50 px-4 py-2 rounded-full">
+                                <i data-lucide="mail" class="w-4 h-4 text-red-500"></i> jeny.salomon@urosario.edu.co
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 9. Apoyo de Cancillería -->
+            <section class="border-2 ur-border-blue rounded-3xl overflow-hidden shadow-sm bg-white">
+                <div class="ur-blue text-white px-6 py-3 flex items-center gap-3">
+                    <i data-lucide="landmark" class="w-5 h-5"></i>
+                    <h3 class="font-bold text-sm uppercase tracking-widest">Apoyo de Cancillería</h3>
+                </div>
+                <div class="p-6 md:p-10 space-y-10">
+                    <div class="max-w-xl mx-auto text-center bg-slate-50 p-4 rounded-2xl border border-slate-100 shadow-inner">
+                        <p class="text-slate-600 text-[11px] md:text-xs leading-relaxed">
+                            Cancillería <strong>no realiza la búsqueda de instituciones </strong>para las observaciones clínicas. <br>
+                            Su rol es actuar como puente de comunicación oficial para formalizar el proceso de movilidad.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="relative flex justify-center">
+                            <span class="bg-white px-4 text-[10px] font-black ur-text-blue uppercase tracking-[0.3em] flex items-center gap-2">
+                                <i data-lucide="list-todo" class="w-4 h-4 text-red-500"></i> Antes de solicitar
+                            </span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-tight italic">
+                                El estudiante debe tener clara la siguiente información: 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-slate-50 border border-slate-200 p-6 rounded-3xl flex flex-col items-center text-center space-y-3 transition-all hover:bg-white hover:shadow-xl group">
+                            <div class="bg-blue-600 text-white p-4 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                                <i data-lucide="building-2" class="w-6 h-6"></i>
+                            </div>
+                            <p class="text-sm font-black text-slate-800 uppercase tracking-tight">Institución de Destino</p>
+                        </div>
+
+                        <div class="bg-slate-50 border border-slate-200 p-6 rounded-3xl flex flex-col items-center text-center space-y-3 transition-all hover:bg-white hover:shadow-xl group">
+                            <div class="bg-blue-600 text-white p-4 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                                <i data-lucide="stethoscope" class="w-6 h-6"></i>
+                            </div>
+                            <p class="text-sm font-black text-slate-800 uppercase tracking-tight">Servicio clínico</p>
+                        </div>
+
+                        <div class="bg-slate-50 border border-slate-200 p-6 rounded-3xl flex flex-col items-center text-center space-y-3 transition-all hover:bg-white hover:shadow-xl group">
+                            <div class="bg-blue-600 text-white p-4 rounded-2xl shadow-lg group-hover:scale-110 transition-transform">
+                                <i data-lucide="calendar-check" class="w-6 h-6"></i>
+                            </div>
+                            <p class="text-sm font-black text-slate-800 uppercase tracking-tight">Fechas de movilidad</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 10. Realiza tu solicitud -->
+            <div class="pt-8 text-center px-4 pb-12">
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=V1dSrrqJME2i90l5bvjGBBil7Jhr96NDjxNK3a3xq1xUQ0NSTTJSOEk1OVlZUktRRDI4MUI0OUlQVi4u" 
+                   target="_blank" 
+                   class="inline-block w-full max-w-md ur-blue text-white font-black py-5 rounded-3xl shadow-2xl hover:brightness-110 transition-all transform hover:-translate-y-1 active:scale-95 text-xs md:text-sm tracking-[0.2em] uppercase text-center animate-pulse-subtle">
+                    Realiza tu solicitud a Cancillería
+                </a>
+                <p class="text-[9px] text-slate-400 mt-4 uppercase font-black tracking-widest">Nota: Cada institución define sus propios requisitos y cronogramas.</p>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
